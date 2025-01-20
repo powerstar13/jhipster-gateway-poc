@@ -2,6 +2,10 @@ package backend.jshong.poc.jhipster.gateway.web.rest;
 
 import backend.jshong.poc.jhipster.gateway.security.SecurityUtils;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import java.security.Principal;
+import java.util.Map;
+import java.util.Set;
+import java.util.stream.Collectors;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.MediaType;
@@ -13,11 +17,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
-
-import java.security.Principal;
-import java.util.Map;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api")

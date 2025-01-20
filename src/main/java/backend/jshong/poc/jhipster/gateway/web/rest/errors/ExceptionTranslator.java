@@ -1,5 +1,9 @@
 package backend.jshong.poc.jhipster.gateway.web.rest.errors;
 
+import static org.springframework.core.annotation.AnnotatedElementUtils.findMergedAnnotation;
+
+import java.net.URI;
+import java.util.*;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
@@ -24,11 +28,6 @@ import tech.jhipster.web.rest.errors.ExceptionTranslation;
 import tech.jhipster.web.rest.errors.ProblemDetailWithCause;
 import tech.jhipster.web.rest.errors.ProblemDetailWithCause.ProblemDetailWithCauseBuilder;
 import tech.jhipster.web.util.HeaderUtil;
-
-import java.net.URI;
-import java.util.*;
-
-import static org.springframework.core.annotation.AnnotatedElementUtils.findMergedAnnotation;
 
 /**
  * Controller advice to translate the server side exceptions to client-friendly json structures.

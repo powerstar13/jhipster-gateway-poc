@@ -1,8 +1,8 @@
-import React, {useEffect, useState} from 'react';
-import {Translate} from 'react-jhipster';
+import React, { useEffect, useState } from 'react';
+import { Translate } from 'react-jhipster';
 
-import {useAppDispatch, useAppSelector} from 'app/config/store';
-import {changeLogLevel, getLoggers} from '../administration.reducer';
+import { useAppDispatch, useAppSelector } from 'app/config/store';
+import { changeLogLevel, getLoggers } from '../administration.reducer';
 
 export const LogsPage = () => {
   const [filter, setFilter] = useState('');

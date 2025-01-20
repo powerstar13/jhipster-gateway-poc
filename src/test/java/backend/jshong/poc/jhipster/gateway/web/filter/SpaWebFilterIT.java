@@ -2,14 +2,13 @@ package backend.jshong.poc.jhipster.gateway.web.filter;
 
 import backend.jshong.poc.jhipster.gateway.IntegrationTest;
 import backend.jshong.poc.jhipster.gateway.security.AuthoritiesConstants;
+import java.time.Duration;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.reactive.AutoConfigureWebTestClient;
 import org.springframework.http.MediaType;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.reactive.server.WebTestClient;
-
-import java.time.Duration;
 
 @AutoConfigureWebTestClient(timeout = IntegrationTest.DEFAULT_TIMEOUT)
 @WithMockUser

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Route} from 'react-router';
+import { Route } from 'react-router';
 import ErrorBoundaryRoutes from 'app/shared/error/error-boundary-routes';
 import Logs from './logs/logs';
 import Health from './health/health';

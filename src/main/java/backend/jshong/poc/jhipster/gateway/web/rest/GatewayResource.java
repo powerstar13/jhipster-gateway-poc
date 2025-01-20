@@ -2,6 +2,8 @@ package backend.jshong.poc.jhipster.gateway.web.rest;
 
 import backend.jshong.poc.jhipster.gateway.security.AuthoritiesConstants;
 import backend.jshong.poc.jhipster.gateway.web.rest.vm.RouteVM;
+import java.util.ArrayList;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.cloud.gateway.route.Route;
@@ -12,9 +14,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Flux;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * REST controller for managing Gateway configuration.

@@ -1,10 +1,10 @@
-import React, {useEffect, useState} from 'react';
-import {Translate} from 'react-jhipster';
-import {Badge, Button, Col, Row, Table} from 'reactstrap';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import React, { useEffect, useState } from 'react';
+import { Translate } from 'react-jhipster';
+import { Badge, Button, Col, Row, Table } from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import {useAppDispatch, useAppSelector} from 'app/config/store';
-import {getSystemHealth} from '../administration.reducer';
+import { useAppDispatch, useAppSelector } from 'app/config/store';
+import { getSystemHealth } from '../administration.reducer';
 import HealthModal from './health-modal';
 
 export const HealthPage = () => {

@@ -1,11 +1,18 @@
 package backend.jshong.poc.jhipster.gateway.config;
 
+import static org.springframework.security.config.Customizer.withDefaults;
+import static org.springframework.security.oauth2.core.oidc.StandardClaimNames.PREFERRED_USERNAME;
+import static org.springframework.security.web.server.util.matcher.ServerWebExchangeMatchers.pathMatchers;
+
 import backend.jshong.poc.jhipster.gateway.security.AuthoritiesConstants;
 import backend.jshong.poc.jhipster.gateway.security.SecurityUtils;
 import backend.jshong.poc.jhipster.gateway.security.oauth2.AudienceValidator;
 import backend.jshong.poc.jhipster.gateway.web.filter.SpaWebFilter;
 import com.github.benmanes.caffeine.cache.Cache;
 import com.github.benmanes.caffeine.cache.Caffeine;
+import java.time.Duration;
+import java.util.*;
+import java.util.function.Consumer;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -43,14 +50,6 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import tech.jhipster.config.JHipsterProperties;
 import tech.jhipster.web.filter.reactive.CookieCsrfFilter;
-
-import java.time.Duration;
-import java.util.*;
-import java.util.function.Consumer;
-
-import static org.springframework.security.config.Customizer.withDefaults;
-import static org.springframework.security.oauth2.core.oidc.StandardClaimNames.PREFERRED_USERNAME;
-import static org.springframework.security.web.server.util.matcher.ServerWebExchangeMatchers.pathMatchers;
 
 @Configuration
 @EnableReactiveMethodSecurity

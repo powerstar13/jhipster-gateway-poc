@@ -1,7 +1,13 @@
 package backend.jshong.poc.jhipster.gateway.web.rest;
 
+import static backend.jshong.poc.jhipster.gateway.test.util.OAuth2TestUtil.*;
+import static org.springframework.security.test.web.reactive.server.SecurityMockServerConfigurers.*;
+
 import backend.jshong.poc.jhipster.gateway.IntegrationTest;
 import backend.jshong.poc.jhipster.gateway.security.AuthoritiesConstants;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,13 +18,6 @@ import org.springframework.security.oauth2.client.ReactiveOAuth2AuthorizedClient
 import org.springframework.security.oauth2.client.registration.ClientRegistration;
 import org.springframework.security.oauth2.client.registration.ReactiveClientRegistrationRepository;
 import org.springframework.test.web.reactive.server.WebTestClient;
-
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-
-import static backend.jshong.poc.jhipster.gateway.test.util.OAuth2TestUtil.*;
-import static org.springframework.security.test.web.reactive.server.SecurityMockServerConfigurers.*;
 
 /**
  * Integration tests for the {@link LogoutResource} REST controller.

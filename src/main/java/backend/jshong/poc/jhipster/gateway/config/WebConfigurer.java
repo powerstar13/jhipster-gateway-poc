@@ -2,6 +2,7 @@ package backend.jshong.poc.jhipster.gateway.config;
 
 import backend.jshong.poc.jhipster.gateway.web.rest.errors.ExceptionTranslator;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import java.util.concurrent.TimeUnit;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.web.reactive.ResourceHandlerRegistrationCustomizer;
@@ -19,8 +20,6 @@ import tech.jhipster.config.JHipsterConstants;
 import tech.jhipster.config.JHipsterProperties;
 import tech.jhipster.web.filter.reactive.CachingHttpHeadersFilter;
 import tech.jhipster.web.rest.errors.ReactiveWebExceptionHandler;
-
-import java.util.concurrent.TimeUnit;
 
 /**
  * Configuration of web application with Servlet 3.0 APIs.

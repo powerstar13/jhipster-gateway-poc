@@ -1,5 +1,7 @@
 package backend.jshong.poc.jhipster.gateway.web.rest.errors;
 
+import static org.springframework.security.test.web.reactive.server.SecurityMockServerConfigurers.csrf;
+
 import backend.jshong.poc.jhipster.gateway.IntegrationTest;
 import org.hamcrest.core.AnyOf;
 import org.hamcrest.core.IsEqual;
@@ -11,8 +13,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.reactive.server.WebTestClient;
-
-import static org.springframework.security.test.web.reactive.server.SecurityMockServerConfigurers.csrf;
 
 /**
  * Integration tests {@link ExceptionTranslator} controller advice.

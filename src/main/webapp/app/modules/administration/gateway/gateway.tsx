@@ -1,10 +1,10 @@
-import React, {useEffect} from 'react';
-import {Translate} from 'react-jhipster';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {Badge, Button, Table} from 'reactstrap';
+import React, { useEffect } from 'react';
+import { Translate } from 'react-jhipster';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Badge, Button, Table } from 'reactstrap';
 
-import {useAppDispatch, useAppSelector} from 'app/config/store';
-import {getGatewayRoutes} from '../administration.reducer';
+import { useAppDispatch, useAppSelector } from 'app/config/store';
+import { getGatewayRoutes } from '../administration.reducer';
 
 export const GatewayPage = () => {
   const dispatch = useAppDispatch();

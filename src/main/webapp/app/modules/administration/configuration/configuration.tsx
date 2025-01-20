@@ -1,9 +1,9 @@
-import React, {useEffect, useState} from 'react';
-import {Badge, Col, Input, Row, Table} from 'reactstrap';
-import {Translate} from 'react-jhipster';
+import React, { useEffect, useState } from 'react';
+import { Badge, Col, Input, Row, Table } from 'reactstrap';
+import { Translate } from 'react-jhipster';
 
-import {useAppDispatch, useAppSelector} from 'app/config/store';
-import {getConfigurations, getEnv} from '../administration.reducer';
+import { useAppDispatch, useAppSelector } from 'app/config/store';
+import { getConfigurations, getEnv } from '../administration.reducer';
 
 export const ConfigurationPage = () => {
   const [filter, setFilter] = useState('');
